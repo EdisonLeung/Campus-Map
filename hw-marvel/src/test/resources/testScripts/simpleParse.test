@@ -1,0 +1,4 @@
+# Test a simple file parse with one node
+LoadGraph simpleGraph simpleGraph.csv
+
+ListNodes simpleGraph

@@ -1,0 +1,22 @@
+# Test min pathfinding for a node with 2 paths with 2 jumps. First path
+# has lower initial cost but higher overall cost and second path has
+# higher initial cost but lower overall cost. Tests if pathfinding will
+# choose the second path because it has a lower overall cost
+
+# Create Graph
+CreateGraph minPath
+
+# Add Nodes
+AddNode minPath a
+AddNode minPath b
+AddNode minPath c
+AddNode minPath d
+
+# Add Edge
+AddEdge minPath a b 1.0
+AddEdge minPath b c 4.0
+AddEdge minPath a d 2.0
+AddEdge minPath d c 1.0
+
+# Test pathfinding
+FindPath minPath a c

@@ -1,0 +1,21 @@
+# Tests the getChildren function by adding edges, printing the edges and then
+# adding another edge and printing it to see if new edge is printed
+
+# Create graph
+CreateGraph getEdge
+
+# Add Nodes
+AddNode getEdge a
+AddNode getEdge b
+
+# Add edge
+AddEdge getEdge a b AB
+
+# Print children
+ListChildren getEdge a
+
+# Add another edge
+AddEdge getEdge a a AA
+
+# Print children
+ListChildren getEdge a

@@ -1,0 +1,20 @@
+# Creates 2 nodes and tests having one edge reference the node it is coming from and the
+# other edge point from that node to the other node
+
+# Create graph
+CreateGraph selfDestChildNode
+
+# Add 2 nodes
+AddNode selfDestChildNode a
+AddNode selfDestChildNode b
+
+# Add one edge that references the node it comes from
+AddEdge selfDestChildNode a a AA
+
+# Add second edge that references the other node
+AddEdge selfDestChildNode a b AB
+
+# Print the nodes and the children
+ListNodes selfDestChildNode
+ListChildren selfDestChildNode a
+ListChildren selfDestChildNode b

@@ -1,0 +1,16 @@
+# Tests simple pathfinding with cost from one node to another
+
+# Create Graph
+created graph oneJump
+
+# Add nodes
+added node a to oneJump
+added node b to oneJump
+
+# Add edge
+added edge 1.000 from a to b in oneJump
+
+# Test pathfinding
+path from a to b:
+a to b with weight 1.000
+total cost: 1.000

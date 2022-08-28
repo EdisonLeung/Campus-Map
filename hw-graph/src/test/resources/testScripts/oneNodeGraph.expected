@@ -1,0 +1,11 @@
+# Tests adding one node to Graph
+
+# Create Graph
+created graph oneNode
+
+# Add one node
+added node a to oneNode
+
+# Print the nodes and children of that node
+oneNode contains: a
+the children of a in oneNode are:

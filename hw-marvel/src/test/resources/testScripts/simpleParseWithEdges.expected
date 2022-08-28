@@ -1,0 +1,8 @@
+# Tests file parsing with nodes and edges
+
+loaded graph simpleParse
+
+# list nodes and children
+simpleParse contains: a b
+the children of a in simpleParse are: b(AB)
+the children of b in simpleParse are: a(AB)

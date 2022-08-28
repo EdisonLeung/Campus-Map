@@ -1,0 +1,23 @@
+# Test pathfinding on a complex graph where all nodes point to 1 "center" node and
+# are all connect to each other via that "center" node. Main purpose of test is to
+# test shortest pathfinding on a complex graph
+
+# Load Graph
+LoadGraph pivotPoint pivotPointGraph.csv
+
+# Pathfinding tests
+FindPath pivotPoint e b
+
+FindPath pivotPoint e c
+
+FindPath pivotPoint e d
+
+FindPath pivotPoint a b
+
+FindPath pivotPoint a d
+
+FindPath pivotPoint c d
+
+FindPath pivotPoint b d
+
+FindPath pivotPoint b c

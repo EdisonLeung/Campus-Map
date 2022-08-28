@@ -1,0 +1,19 @@
+# Test pathfinding on a node with 2 paths that have the same distance but the two
+# paths also share a same path for part of the traversal. Tests if the least
+# lexicographical path is chosen
+
+# Create graph
+CreateGraph partialPath
+
+# Add nodes
+AddNode partialPath a
+AddNode partialPath b
+AddNode partialPath c
+
+# Add edges
+AddEdge partialPath a b ABa
+AddEdge partialPath a b ABb
+AddEdge partialPath b c BC
+
+# test pathfinding from a to c
+FindPath partialPath a c

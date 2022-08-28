@@ -1,0 +1,20 @@
+# Tests pathfinding for path with least cost but not least jumps
+
+# Create Graph
+created graph minPath
+
+# Add nodes
+added node a to minPath
+added node b to minPath
+added node c to minPath
+
+# Add edges
+added edge 5.000 from a to b in minPath
+added edge 5.000 from b to c in minPath
+added edge 20.000 from a to c in minPath
+
+# test pathfinding
+path from a to c:
+a to b with weight 5.000
+b to c with weight 5.000
+total cost: 10.000

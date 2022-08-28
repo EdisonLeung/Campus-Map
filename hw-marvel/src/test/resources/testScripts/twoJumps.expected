@@ -1,0 +1,18 @@
+# Tests pathfinding from one node to another with 2 jumps
+
+# Create graph
+created graph twoJumps
+
+# Add nodes
+added node a to twoJumps
+added node b to twoJumps
+added node c to twoJumps
+
+# Add Edges
+added edge AB from a to b in twoJumps
+added edge BC from b to c in twoJumps
+
+# path finding
+path from a to c:
+a to b via AB
+b to c via BC

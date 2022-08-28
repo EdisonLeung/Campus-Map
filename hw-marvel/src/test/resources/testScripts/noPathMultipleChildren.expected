@@ -1,0 +1,20 @@
+# Test pathfinding for a node where there is no path to another node but both nodes
+# have children (they are just not related)
+
+# Create graph
+created graph noPath
+
+# Add nodes
+added node a to noPath
+added node b to noPath
+added node c to noPath
+
+# Add edges
+added edge ABa from a to b in noPath
+added edge ABb from a to b in noPath
+added edge CA from c to a in noPath
+added edge CB from c to b in noPath
+
+# pathfinding from a to c
+path from a to c:
+no path found

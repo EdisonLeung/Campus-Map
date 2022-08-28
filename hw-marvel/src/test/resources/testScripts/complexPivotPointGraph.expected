@@ -1,0 +1,35 @@
+# Test pathfinding on a complex graph where all nodes point to 1 "center" node and
+# are all connect to each other via that "center" node. Main purpose of test is to
+# test shortest pathfinding on a complex graph
+
+# Load Graph
+loaded graph pivotPoint
+
+# Pathfinding tests
+path from e to b:
+e to b via BE
+
+path from e to c:
+e to c via CE
+
+path from e to d:
+e to d via DE
+
+path from a to b:
+a to e via AE
+e to b via BE
+
+path from a to d:
+a to c via AC
+c to d via CD
+
+path from c to d:
+c to d via CD
+
+path from b to d:
+b to e via BE
+e to d via DE
+
+path from b to c:
+b to e via BE
+e to c via CE

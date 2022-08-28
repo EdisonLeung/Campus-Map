@@ -1,0 +1,64 @@
+# tests min pathfinding on a complex graph
+
+# Create Graph
+created graph complex
+
+# Add nodes
+added node a to complex
+added node b to complex
+added node c to complex
+added node d to complex
+added node e to complex
+added node f to complex
+
+# Add Edges
+added edge 1.000 from a to b in complex
+added edge 5.000 from a to e in complex
+added edge 3.000 from a to d in complex
+added edge 4.000 from b to c in complex
+added edge 2.000 from b to f in complex
+added edge 3.000 from b to e in complex
+added edge 2.000 from d to a in complex
+added edge 2.000 from d to e in complex
+added edge 4.000 from e to d in complex
+added edge 1.000 from f to c in complex
+added edge 3.000 from f to e in complex
+
+# test pathfinding
+path from a to c:
+a to b with weight 1.000
+b to f with weight 2.000
+f to c with weight 1.000
+total cost: 4.000
+
+path from a to d:
+a to d with weight 3.000
+total cost: 3.000
+
+path from a to e:
+a to b with weight 1.000
+b to e with weight 3.000
+total cost: 4.000
+
+path from b to a:
+b to e with weight 3.000
+e to d with weight 4.000
+d to a with weight 2.000
+total cost: 9.000
+
+path from f to a:
+f to e with weight 3.000
+e to d with weight 4.000
+d to a with weight 2.000
+total cost: 9.000
+
+path from d to f:
+d to a with weight 2.000
+a to b with weight 1.000
+b to f with weight 2.000
+total cost: 5.000
+
+path from e to a:
+e to d with weight 4.000
+d to a with weight 2.000
+total cost: 6.000

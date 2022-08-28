@@ -1,0 +1,11 @@
+# Tests the creation of 2 nodes
+
+# Create graph
+CreateGraph twoNodes
+
+# Add 2 nodes
+AddNode twoNodes a
+AddNode twoNodes b
+
+# Print nodes
+ListNodes twoNodes

@@ -1,0 +1,14 @@
+# Tests pathfinding where start node and end node are the same node
+
+# Create Graph
+CreateGraph selfPath
+
+# Add nodes
+AddNode selfPath a
+AddNode selfPath b
+
+# Add edge
+AddEdge selfPath a b AB
+
+# pathfinding from a to a
+FindPath selfPath a a

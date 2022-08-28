@@ -1,0 +1,17 @@
+# Tests pathfinding for a node that points to itself
+
+# Create Graph
+# ;) heyyy
+
+created graph selfPath
+
+# Add nodes
+added node a to selfPath
+added node b to selfPath
+
+# Add edges
+added edge 5.000 from a to b in selfPath
+
+# test pathfinding
+path from a to a:
+total cost: 0.000

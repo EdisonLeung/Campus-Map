@@ -1,0 +1,30 @@
+# Test pathfinding on a complex graph where there are 2 groups of nodes that are
+# disconnected
+
+# Load Graph
+loaded graph separated
+
+# Pathfinding tests
+path from a to b:
+a to b via AB
+
+path from a to c:
+a to b via AB
+b to c via BC
+
+path from d to e:
+d to e via DE
+
+path from e to f:
+e to f via EF
+
+path from b to d:
+no path found
+
+path from c to f:
+no path found
+
+path from e to a:
+no path found
+
+path from a to a:

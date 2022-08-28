@@ -1,0 +1,16 @@
+# Tests pathfinding on a node that has no edges and thus no path to another node
+
+# Create Graph
+CreateGraph noPath
+
+# Add nodes
+AddNode noPath a
+AddNode noPath b
+AddNode noPath c
+
+# Add edges
+AddEdge noPath b a BA
+AddEdge noPath b c BC
+
+# pathfinding from a to c
+FindPath noPath a c

@@ -1,0 +1,34 @@
+# Tests creating a graph with multiple complex nodes and edges. Creates 5 nodes:
+# a, b, c, d, and e. Node a will have 4 edges pointing to a, b, c, d. Node b will have
+# 1 edge pointing to d. Node c will have 2 edges pointing to b and d. Node d will have
+# 1 edge pointing to b. Node e will have 2 edge pointing to itself.
+
+# Create graph
+created graph complexGraph
+
+# Add nodes
+added node a to complexGraph
+added node b to complexGraph
+added node c to complexGraph
+added node d to complexGraph
+added node e to complexGraph
+
+# Add edges
+added edge AA from a to a in complexGraph
+added edge AB from a to b in complexGraph
+added edge AC from a to c in complexGraph
+added edge AD from a to d in complexGraph
+added edge BD from b to d in complexGraph
+added edge CB from c to b in complexGraph
+added edge CD from c to d in complexGraph
+added edge DB from d to b in complexGraph
+added edge EE from e to e in complexGraph
+added edge EE1 from e to e in complexGraph
+
+# Print Nodes and children
+complexGraph contains: a b c d e
+the children of a in complexGraph are: a(AA) b(AB) c(AC) d(AD)
+the children of b in complexGraph are: d(BD)
+the children of c in complexGraph are: b(CB) d(CD)
+the children of d in complexGraph are: b(DB)
+the children of e in complexGraph are: e(EE) e(EE1)

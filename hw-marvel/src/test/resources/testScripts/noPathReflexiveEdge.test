@@ -1,0 +1,17 @@
+# Tests pathfinding where there is no path and the nodes goes in a loop. Purpose of
+# the test is to test that the pathfinding will not create an infinite loop
+
+# Create graph
+CreateGraph noPathReflexive
+
+# Add nodes
+AddNode noPathReflexive a
+AddNode noPathReflexive b
+AddNode noPathReflexive c
+
+# Add edges
+AddEdge noPathReflexive a b AB
+AddEdge noPathReflexive b a BA
+
+# Pathfinding from a to c
+FindPath noPathReflexive a c

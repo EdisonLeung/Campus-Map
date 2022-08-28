@@ -1,0 +1,18 @@
+# Test if ListChildren will print the children with edges in alphabetical order
+# by adding 3 edges that point to a node in reverse alphabetical order
+
+# Create graph
+created graph alphabeticEdge
+
+# Add 2 Nodes
+added node a to alphabeticEdge
+added node b to alphabeticEdge
+
+# Add edges from a to b in reverse alphabetical order
+added edge AC from a to b in alphabeticEdge
+added edge AB from a to b in alphabeticEdge
+added edge AA from a to b in alphabeticEdge
+
+# Print nodes and children
+alphabeticEdge contains: a b
+the children of a in alphabeticEdge are: b(AA) b(AB) b(AC)

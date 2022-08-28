@@ -1,0 +1,17 @@
+# tests whether ListNodes works properly by adding a node, printing the node
+# and then adding another one and seeing if ListNode will list the new node also
+
+# Create graph
+created graph getNodes
+
+# Add nodes
+added node a to getNodes
+
+# List nodes
+getNodes contains: a
+
+# Add another node
+added node b to getNodes
+
+# List nodes
+getNodes contains: a b

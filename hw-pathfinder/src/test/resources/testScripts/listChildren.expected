@@ -1,0 +1,19 @@
+# Tests printing out the children to see if it prints the edges
+# from least cost to most cost
+
+# Create Graph
+created graph listChildren
+
+# Add nodes
+added node a to listChildren
+added node b to listChildren
+added node c to listChildren
+
+# Add edges
+added edge 4.000 from a to b in listChildren
+added edge 3.000 from a to b in listChildren
+added edge 6.000 from a to c in listChildren
+added edge 1.000 from a to c in listChildren
+
+# print children
+the children of a in listChildren are: b(3.000) b(4.000) c(1.000) c(6.000)

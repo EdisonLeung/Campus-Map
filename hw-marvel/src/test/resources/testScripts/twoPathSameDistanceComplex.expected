@@ -1,0 +1,22 @@
+# tests pathfinding where a node has 2 paths (with multiple jumps) with the
+# same distance
+
+# Create Graph
+created graph twoPaths
+
+# Add Nodes
+added node a to twoPaths
+added node b to twoPaths
+added node c to twoPaths
+added node d to twoPaths
+
+# Add Edges
+added edge AB from a to b in twoPaths
+added edge BC from b to c in twoPaths
+added edge AD from a to d in twoPaths
+added edge DC from d to c in twoPaths
+
+# test pathfinding from a to c
+path from a to c:
+a to b via AB
+b to c via BC

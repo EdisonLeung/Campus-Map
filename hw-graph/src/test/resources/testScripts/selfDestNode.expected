@@ -1,0 +1,15 @@
+# Creates a single node and tests an edge referencing that node (a node that has
+# itself as a destination)
+
+# Create graph
+created graph selfDest
+
+# Add the node
+added node a to selfDest
+
+# Add the self referencing edge
+added edge AA from a to a in selfDest
+
+# Print node and children
+selfDest contains: a
+the children of a in selfDest are: a(AA)

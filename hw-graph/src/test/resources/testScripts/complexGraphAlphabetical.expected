@@ -1,0 +1,33 @@
+# Creates a complex graph with multiple nodes and edges and tests if they are ordered
+# in alphabetical order. There will be 4 nodes: a, b, c, d. Node a will have 2 edges
+# pointing to c and 1 edge pointing to b. Node b will have 1 edge pointing to a. Node
+# c will have 2 edges pointing to a and b. Node d will have 2 edges pointing to b and
+# 1 edge pointing to itself. Adds nodes and edges in reverse alphabetical order to test
+# if graph will put letters in alphabetical order
+
+# Create Graph
+created graph complexAlphabetical
+
+# Add nodes
+added node d to complexAlphabetical
+added node c to complexAlphabetical
+added node b to complexAlphabetical
+added node a to complexAlphabetical
+
+# Add edges
+added edge DD from d to d in complexAlphabetical
+added edge DB1 from d to b in complexAlphabetical
+added edge DB from d to b in complexAlphabetical
+added edge CB from c to b in complexAlphabetical
+added edge CA from c to a in complexAlphabetical
+added edge BA from b to a in complexAlphabetical
+added edge AC1 from a to c in complexAlphabetical
+added edge AC from a to c in complexAlphabetical
+added edge AB from a to b in complexAlphabetical
+
+# Print nodes and children
+complexAlphabetical contains: a b c d
+the children of a in complexAlphabetical are: b(AB) c(AC) c(AC1)
+the children of b in complexAlphabetical are: a(BA)
+the children of c in complexAlphabetical are: a(CA) b(CB)
+the children of d in complexAlphabetical are: b(DB) b(DB1) d(DD)

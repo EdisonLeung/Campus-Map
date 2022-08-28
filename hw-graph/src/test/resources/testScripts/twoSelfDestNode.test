@@ -1,0 +1,17 @@
+# Creates 2 nodes and tests adding 2 edges that reference the node the came from
+
+# Create graph
+CreateGraph twoSelfDest
+
+# Add 2 nodes
+AddNode twoSelfDest a
+AddNode twoSelfDest b
+
+# Add 2 edges that point to the node they came from
+AddEdge twoSelfDest a a AA
+AddEdge twoSelfDest b b BB
+
+# Print nodes and children
+ListNodes twoSelfDest
+ListChildren twoSelfDest a
+ListChildren twoSelfDest b

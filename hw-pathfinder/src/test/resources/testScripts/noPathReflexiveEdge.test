@@ -1,0 +1,19 @@
+# tests pathfinding on a node with children in a reflexive pattern and
+# no path. Tests that algorithm will not create infinite loop
+
+# Create Graph
+CreateGraph noPath
+
+# add nodes
+AddNode noPath a
+AddNode noPath b
+AddNode noPath c
+
+# add edges
+AddEdge noPath a b 5.0
+AddEdge noPath b a 5.0
+
+# test pathfinding
+FindPath noPath a b
+
+FindPath noPath a c

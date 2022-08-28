@@ -1,0 +1,21 @@
+# Tests the getChildren function by adding edges, printing the edges and then
+# adding another edge and printing it to see if new edge is printed
+
+# Create graph
+created graph getEdge
+
+# Add Nodes
+added node a to getEdge
+added node b to getEdge
+
+# Add edge
+added edge AB from a to b in getEdge
+
+# Print children
+the children of a in getEdge are: b(AB)
+
+# Add another edge
+added edge AA from a to a in getEdge
+
+# Print children
+the children of a in getEdge are: a(AA) b(AB)

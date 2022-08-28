@@ -1,0 +1,19 @@
+# Tests the total cost calculating functionality of pathfinding
+
+# Create Graph
+created graph cost
+
+# Add Nodes
+added node a to cost
+added node b to cost
+added node c to cost
+
+# Add Edges
+added edge 1.000 from a to b in cost
+added edge 1.000 from b to c in cost
+
+# Test Pathfinding
+path from a to c:
+a to b with weight 1.000
+b to c with weight 1.000
+total cost: 2.000

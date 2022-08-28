@@ -1,0 +1,19 @@
+# Tests printing out the children to see if it prints the edges
+# from least cost to most cost
+
+# Create Graph
+CreateGraph listChildren
+
+# Add nodes
+AddNode listChildren a
+AddNode listChildren b
+AddNode listChildren c
+
+# Add edges
+AddEdge listChildren a b 4.0
+AddEdge listChildren a b 3.0
+AddEdge listChildren a c 6.0
+AddEdge listChildren a c 1.0
+
+# print children
+ListChildren listChildren a

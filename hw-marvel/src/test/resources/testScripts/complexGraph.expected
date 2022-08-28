@@ -1,0 +1,24 @@
+# tests pathfinding on a complex graph with many nodes and edges. This tests will
+# test multiple path findings to test if pathfinding works on a complex graph
+
+# Load graph
+loaded graph complexGraph
+
+# path finding
+path from a to d:
+a to d via AD
+
+path from a to b:
+a to b via ABa
+
+path from c to b:
+c to a via AC
+a to b via ABa
+
+path from d to b:
+d to a via AD
+a to b via ABa
+
+path from b to d:
+b to a via ABa
+a to d via AD

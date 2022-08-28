@@ -1,0 +1,16 @@
+# tests pathfinding on a complex graph with many nodes and edges. This tests will
+# test multiple path findings to test if pathfinding works on a complex graph
+
+# Load graph
+LoadGraph complexGraph complexGraph.csv
+
+# path finding
+FindPath complexGraph a d
+
+FindPath complexGraph a b
+
+FindPath complexGraph c b
+
+FindPath complexGraph d b
+
+FindPath complexGraph b d

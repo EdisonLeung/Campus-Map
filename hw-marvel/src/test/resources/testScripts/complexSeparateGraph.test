@@ -1,0 +1,22 @@
+# Test pathfinding on a complex graph where there are 2 groups of nodes that are
+# disconnected
+
+# Load Graph
+LoadGraph separated separatedGraph.csv
+
+# Pathfinding tests
+FindPath separated a b
+
+FindPath separated a c
+
+FindPath separated d e
+
+FindPath separated e f
+
+FindPath separated b d
+
+FindPath separated c f
+
+FindPath separated e a
+
+FindPath separated a a

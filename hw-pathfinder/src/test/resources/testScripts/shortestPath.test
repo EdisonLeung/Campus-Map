@@ -1,0 +1,18 @@
+# Tests pathfinding on a path with the lowest cost and least number of
+# jumps
+
+# Create Graph
+CreateGraph shortestPath
+
+# Add nodes
+AddNode shortestPath a
+AddNode shortestPath b
+AddNode shortestPath c
+
+# Add edges
+AddEdge shortestPath a b 5.0
+AddEdge shortestPath b c 5.0
+AddEdge shortestPath a c 1.0
+
+# test pathfinding
+FindPath shortestPath a c

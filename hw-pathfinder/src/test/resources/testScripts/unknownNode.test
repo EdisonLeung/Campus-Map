@@ -1,0 +1,19 @@
+# test functionality for pathfinding with a node that graph does
+# not contain
+
+# Create graph
+CreateGraph unknown
+
+# Add nodes
+AddNode unknown a
+AddNode unknown b
+
+# Add edge
+AddEdge unknown a b 1.0
+
+# test pathfinding
+FindPath unknown x b
+
+FindPath unknown a y
+
+FindPath unknown x y

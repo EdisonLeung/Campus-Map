@@ -1,0 +1,22 @@
+# Creates 2 Nodes and Tests adding an edge on each node that references the node it
+# came from. Also tests adding 2 edges from the first node to the second node
+
+# Create graph
+CreateGraph fourEdges
+
+# Add 2 nodes
+AddNode fourEdges a
+AddNode fourEdges b
+
+# Add 2 self referencing edges
+AddEdge fourEdges a a AA
+AddEdge fourEdges b b BB
+
+# Add 2 edges from a to b
+AddEdge fourEdges a b AB
+AddEdge fourEdges a b AB1
+
+# Print nodes and children
+ListNodes fourEdges
+ListChildren fourEdges a
+ListChildren fourEdges b

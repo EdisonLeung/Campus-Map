@@ -1,0 +1,22 @@
+# Test the creation of 2 graphs. One graph will have 2 nodes with an edge, the other
+# will only have 1 node
+
+# Create graphs
+created graph graphOne
+created graph graphTwo
+
+# Add 2 nodes to graphOne
+added node a to graphOne
+added node b to graphOne
+
+# Add one node to graphTwo
+added node a to graphTwo
+
+# Add edge for graphOne
+added edge AB from a to b in graphOne
+
+# Print nodes and children of graphs
+graphOne contains: a b
+the children of a in graphOne are: b(AB)
+
+graphTwo contains: a

@@ -1,0 +1,40 @@
+# tests min pathfinding on a complex graph
+
+# Create Graph
+CreateGraph complex
+
+# Add nodes
+AddNode complex a
+AddNode complex b
+AddNode complex c
+AddNode complex d
+AddNode complex e
+AddNode complex f
+
+# Add Edges
+AddEdge complex a b 1.0
+AddEdge complex a e 5.0
+AddEdge complex a d 3.0
+AddEdge complex b c 4.0
+AddEdge complex b f 2.0
+AddEdge complex b e 3.0
+AddEdge complex d a 2.0
+AddEdge complex d e 2.0
+AddEdge complex e d 4.0
+AddEdge complex f c 1.0
+AddEdge complex f e 3.0
+
+# test pathfinding
+FindPath complex a c
+
+FindPath complex a d
+
+FindPath complex a e
+
+FindPath complex b a
+
+FindPath complex f a
+
+FindPath complex d f
+
+FindPath complex e a

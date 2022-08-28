@@ -1,0 +1,17 @@
+# Tests pathfinding on a node that has no edges and thus no path to another node
+
+# Create Graph
+created graph noPath
+
+# Add nodes
+added node a to noPath
+added node b to noPath
+added node c to noPath
+
+# Add edges
+added edge BA from b to a in noPath
+added edge BC from b to c in noPath
+
+# pathfinding from a to c
+path from a to c:
+no path found

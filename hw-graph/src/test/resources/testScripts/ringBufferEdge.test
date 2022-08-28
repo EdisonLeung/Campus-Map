@@ -1,0 +1,17 @@
+# Test adding 2 edges that point to 2 different nodes
+
+# Create graph
+CreateGraph ringBuffer
+
+# Add 2 nodes
+AddNode ringBuffer a
+AddNode ringBuffer b
+
+# Add the 2 edges pointing to the different nodes
+AddEdge ringBuffer a b AB
+AddEdge ringBuffer b a BA
+
+# Print the nodes and the children
+ListNodes ringBuffer
+ListChildren ringBuffer a
+ListChildren ringBuffer b

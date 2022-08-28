@@ -1,0 +1,29 @@
+# tests pathfinding where a node has a reflective edge and multiple
+# paths to another node
+
+# Create graph
+created graph minPath
+
+# Add nodes
+added node a to minPath
+added node b to minPath
+added node c to minPath
+
+# Add edges
+added edge 1.000 from a to b in minPath
+added edge 3.000 from b to a in minPath
+added edge 3.000 from b to c in minPath
+added edge 5.000 from a to c in minPath
+
+# test pathfinding
+path from a to c:
+a to b with weight 1.000
+b to c with weight 3.000
+total cost: 4.000
+
+path from b to a:
+b to a with weight 3.000
+total cost: 3.000
+
+path from c to a:
+no path found

@@ -1,0 +1,22 @@
+# Test the creation of 2 graphs. One graph will have 2 nodes with an edge, the other
+# will only have 1 node
+
+# Create graphs
+CreateGraph graphOne
+CreateGraph graphTwo
+
+# Add 2 nodes to graphOne
+AddNode graphOne a
+AddNode graphOne b
+
+# Add one node to graphTwo
+AddNode graphTwo a
+
+# Add edge for graphOne
+AddEdge graphOne a b AB
+
+# Print nodes and children of graphs
+ListNodes graphOne
+ListChildren graphOne a
+
+ListNodes graphTwo

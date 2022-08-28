@@ -1,0 +1,14 @@
+# Tests simple pathfinding with cost from one node to another
+
+# Create Graph
+CreateGraph oneJump
+
+# Add nodes
+AddNode oneJump a
+AddNode oneJump b
+
+# Add edge
+AddEdge oneJump a b 1.0
+
+# Test pathfinding
+FindPath oneJump a b
