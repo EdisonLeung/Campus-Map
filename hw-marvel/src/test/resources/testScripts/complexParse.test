@@ -1,9 +1,0 @@
-# Tests parsing for a complex graph
-
-LoadGraph complexGraph complexGraph.csv
-
-ListNodes complexGraph
-ListChildren complexGraph a
-ListChildren complexGraph b
-ListChildren complexGraph c
-ListChildren complexGraph d

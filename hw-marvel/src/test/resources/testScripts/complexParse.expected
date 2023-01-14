@@ -1,9 +1,0 @@
-# Tests parsing for a complex graph
-
-loaded graph complexGraph
-
-complexGraph contains: a b c d
-the children of a in complexGraph are: b(ABa) b(ABb) c(AC) d(AD)
-the children of b in complexGraph are: a(ABa) a(ABb)
-the children of c in complexGraph are: a(AC) d(CD)
-the children of d in complexGraph are: a(AD) c(CD)

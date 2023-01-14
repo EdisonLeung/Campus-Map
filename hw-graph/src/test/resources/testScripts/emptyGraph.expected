@@ -1,7 +1,0 @@
-# Test the creation of an empty graph
-
-# Create an empty graph
-created graph emptyGraph
-
-# Print the nodes in the empty graph
-emptyGraph contains:

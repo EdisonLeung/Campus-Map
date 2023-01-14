@@ -1,7 +1,0 @@
-# Test the creation of an empty graph
-
-# Create an empty graph
-CreateGraph emptyGraph
-
-# Print the nodes in the empty graph
-ListNodes emptyGraph

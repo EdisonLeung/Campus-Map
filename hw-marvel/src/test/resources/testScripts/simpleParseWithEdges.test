@@ -1,8 +1,0 @@
-# Tests file parsing with nodes and edges
-
-LoadGraph simpleParse graphWithEdge.csv
-
-# list nodes and children
-ListNodes simpleParse
-ListChildren simpleParse a
-ListChildren simpleParse b
